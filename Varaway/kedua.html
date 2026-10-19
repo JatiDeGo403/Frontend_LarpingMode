@@ -1,0 +1,266 @@
+<!-- Agus tidur besok ngelawan dewa lagi-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RE Kedua</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body{
+            background-color: #010409;
+            color: #e6edf6;
+            font-size: 14px;
+        }
+
+        .flex-center{
+            display: flex;
+            align-items: center;
+        }
+
+        .top-nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            background-color: #010409;
+            border-bottom: 1px solid #30363d;
+        }
+
+        .nav-left{
+            gap: 16px;
+        }
+
+        .icon-btn{
+            background: transparent;
+            border: 1px solid #30363d;
+            color: #7d8590;
+            padding: 6px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 32px;
+        }
+
+        .icon-btn :hover{
+            border-color: #7d8590;
+            color: #e6edf6;
+        }
+
+        .github-logo{
+            color: #e6edf6;
+            font-size: 32px;
+            text-decoration: none;
+        }
+
+        .username{
+            font-weight: 600;
+            font-size: 14px;
+            color: #e6edf6;
+            text-decoration: none;
+        }
+
+        .nav-right{
+            gap: 8px;
+        }
+
+        .search-container{
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: #010409;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 4px 8px;
+            width: 300px;
+            height: 32px;
+            color: #7d8590;
+        }
+
+        .search-container:hover{
+            border-color: #7d8590;
+        }
+
+        .search-container i.fa-search{
+            margin-right: 8px;
+            font-size: 14px;
+        }
+
+        .search-input{
+            background: transparent;
+            border: none;
+            color: #e6edf6;
+            font-size: 14px;
+            width: 100%;
+            outline: none;
+        }
+
+        .search-shortcut{
+            border: 1px solid #30363d;
+            border-radius: 4px;
+            padding: 0 4px;
+            font-size: 10px;
+            margin-left: 8px;
+        }
+
+        .divider-vertical{
+            height: 20px;
+            width: 1px;
+            background-color: #30363d;
+            margin: 0 4px;
+        }
+
+        .action-group{
+            display: flex;
+            gap: 8px;
+        }
+
+        .dropdown-btn{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            border: 1px solid #30363d;
+            background: transparent;
+            color: #7d8590;
+            height: 32px;
+            padding: 0 8px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .dropdown-btn:hover, .action-group:hover{
+            border-color: #7d8590;
+            color: #e6edf6;
+        }
+
+        .action-icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            color: #7d8590;
+            text-decoration: none;
+        }
+
+        .profile-avatar{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #30363d;
+            cursor: pointer;
+        }
+
+        .sub-nav-container{
+            background-color: #010409;
+            border-bottom: 1px solid #30363d;
+            padding: 0 24px;
+        }
+
+        .sub-nav{
+            display: flex;
+            gap: 24px;
+            margin-top: 16px;
+        }
+
+        .tab-item{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #e6edf6;
+            text-decoration: none;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+            font-size: 14px;
+        }
+
+        .tab-item:hover{
+            background-color: rgba(177, 186, 196, 0.12);
+            border-radius: 6px;
+            border-bottom-color: transparent;
+        }
+
+        .tab-item-active:hover{
+            background-color: transparent;
+        }
+
+        .tab-item i{
+            color: #7d8590;
+        }
+
+        .badge{
+            background-color: rgba(110, 118, 129, 0.4);
+            color: #e6edf6;
+            border-radius: 12px;
+            padding: 0 6px;
+            font-size: 12px;
+            font-weight: 500;
+            min-width: 20px;
+            text-align: center;
+            line-height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-left flex-center">
+            <button class="icon"> <i class="fa-solid fa-bars"></i></button>
+            <a href="#" class="github-logo"></a>
+            <a href="#" class="username"> apalah</a>
+        </div>
+
+        <div class="nav-right flex-center">
+            <div class="search-container">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" class="search-input" placeholder="Cari tahu">
+                <span class="search-shortcut"></span>
+            </div>
+            
+            <button class="dropdown-btn">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-caret-down" style="font-size: 10px;"></i>
+            </button>
+
+            <div class="divider-vertical"></div>
+
+            <div class="action-group">
+                <button class="dropdown-btn">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-caret-down" style="font-size: 10px;"></i>
+                </button>
+                <a href="#" class="action-icon"> <i class="fa-regular fa-circle-dot"></i></a>
+                <a href="#" class="action-icon" > <i class="fa-solid fa-code-pull-request"></i></a>
+                <a href="#" class="action-icon"><i class="fa-solid fa-book"></i></a>
+                <a href="#" class="action-icon"> <i class="fa-solid fa-inbox"></i></a>
+            </div>
+
+            <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="profile" class="profile-avatar">
+        </div>
+    </nav>
+
+    <div class="sub-nav-container">
+        <nav class="sub-nav">
+            <a href="#" class="tab-item"><i class="fa-solid fa-book-open"></i> overview</a>
+            <a href="#" class="tab-item">
+                <i class="fa-solid fa-book-bookmark"></i> repo <span class="badge"> 5</span>
+            </a>
+            <a href="#" class="tab-item"> <i class="fa-solid fa-table-columns"></i> project</a>
+            <a href="#" class="tab-item"> <i class="fa-solid fa-box"></i> packages</a>
+            <a href="#" class="tab-item"> <i class="fa-solid fa-star"></i>stars <span class="badge"> 2</span></a>
+        </nav>
+    </div>
+</body>
+</html>

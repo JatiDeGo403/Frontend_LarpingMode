@@ -1,3 +1,3 @@
 # Frontend_LarpingMode
 
-## agus kebanyakan yapping, minimal punya girl kid 5555 :)
+## agus sleep saja besok lawan dewa
